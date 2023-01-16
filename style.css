@@ -11,19 +11,17 @@ body {
   background-color: hsl(30, 38%, 92%);
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
+  display: grid;
+  place-items: center;
 }
 
-.card {
+main {
   width: 85%;
   max-width: 550px;
   background-color: white;
   border-radius: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .image img {
   width: 100%;
@@ -48,20 +46,20 @@ body {
 p {
   color: hsl(228, 12%, 48%);
 }
-.card p {
+main p {
   line-height: 1.8;
 }
-.card .price {
+main .price {
   font-family: "Fraunces", serif;
   display: flex;
   gap: 20px;
   align-items: center;
 }
-.card .current {
+main .current {
   font-size: 30px;
   color: hsl(158, 36%, 37%);
 }
-.card .previous {
+main .previous {
   text-decoration: line-through;
   opacity: 0.7;
 }
@@ -83,7 +81,7 @@ button:hover {
 }
 
 @media (max-width: 767px) {
-  .card {
+  main {
     grid-template-columns: 1fr;
   }
   .perfume,
